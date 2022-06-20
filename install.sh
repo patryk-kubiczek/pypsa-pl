@@ -5,6 +5,7 @@ libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm \
 libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev # required by pyenv
 sudo apt install gcc g++ gfortran python3-dev libopenblas-dev liblapack-dev cython # required by scipy
 sudo apt install python3-venv # required by poetry
+sudo apt install libgeos++-dev libproj-dev # required by cartopy
 
 curl https://pyenv.run | bash
 echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
