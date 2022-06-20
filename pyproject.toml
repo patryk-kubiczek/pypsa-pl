@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pypsa-pl"
+version = "0.1.0"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pypsa = "0.17"
+jupyter = "^1.0.0"
+plotly = "^5.8.2"
+ipython = "^8.4.0"
+matplotlib = "^3.5.2"
+geopy = "^2.2.0"
+Shapely = "^1.8.2"
+openpyxl = "^3.0.10"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
