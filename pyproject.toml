@@ -5,15 +5,20 @@ description = ""
 authors = [""]
 
 [tool.poetry.dependencies]
-python = "^3.8"
-pypsa = "0.17"
-jupyter = "^1.0.0"
-plotly = "^5.8.2"
-ipython = "^8.4.0"
-matplotlib = "^3.5.2"
-geopy = "^2.2.0"
+python = "3.7.7"
+pypsa = "0.17.0"
+numpy = "1.17.5"
+xarray = "0.15.1"
+netCDF4 = "1.5.3"
+pandas = "0.25.3"
+xlrd = "1.2.0"
+cplex = "22.1.0"
 Shapely = "^1.8.2"
-openpyxl = "^3.0.10"
+geopy = "^2.2.0"
+plotly = "^5.8.2"
+matplotlib = "^3.5.2"
+jupyter = "^1.0.0"
+
 
 [tool.poetry.dev-dependencies]
 
