@@ -7,8 +7,8 @@ from scripts.capacity_factors import pv_wind_capacity_factors, chp_capacity_fact
 from scripts.cross_border_flow import create_cbf
 
 
-scenario_name = 'instrat'
-reference_year = '2040'
+scenario_name = os.getenv("PYPSAPL_SCENARIO", "instrat")
+reference_year = os.getenv("PYPSAPL_YEAR", "2040")
 
 sys.path.append(os.getcwd() + '/scripts')
 
