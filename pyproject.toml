@@ -19,6 +19,7 @@ plotly = "^5.8.2"
 matplotlib = "^3.5.2"
 jupyter = "^1.0.0"
 Cartopy = "^0.20.2"
+openpyxl = "^3.0.10"
 
 
 [tool.poetry.dev-dependencies]

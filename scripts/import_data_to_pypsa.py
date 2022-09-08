@@ -1,5 +1,9 @@
 import pandas as pd
-from prepare_input_files import scenario_name, reference_year
+import os
+# from prepare_input_files import scenario_name, reference_year
+
+scenario_name = os.getenv("PYPSAPL_SCENARIO", "instrat")
+reference_year = os.getenv("PYPSAPL_YEAR", "2040")
 
 dataPath = f'pypsa/{scenario_name}/data/{reference_year}/'
 

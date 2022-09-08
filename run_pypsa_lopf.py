@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 from pypsa.linopt import get_var, linexpr, define_constraints
 
 import pypsa
@@ -6,6 +7,10 @@ import scripts.import_data_to_pypsa as base_data
 from scripts.export_results import export_network_results
 from scripts.create_date_index import create_date_index
 from prepare_input_files import scenario_name, reference_year, scenario_assumptions_path
+
+
+scenario_name = os.getenv("PYPSAPL_SCENARIO", "instrat")
+reference_year = os.getenv("PYPSAPL_YEAR", "2040")
 
 #  ------------- Network -------------------------------------------------------
 network = pypsa.Network()
